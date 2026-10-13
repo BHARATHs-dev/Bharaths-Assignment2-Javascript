@@ -1,0 +1,72 @@
+body{
+    background-color: none; 
+    font-size: 20px;
+    font-family: times new roman, sans-serif;
+    /* transition: 0.3s; */
+    margin: 30px auto;
+    box-shadow: 0 0 10px grey;
+    width:800px;
+    padding: 30px;
+}
+.dark-mode {
+    background-color: black;
+    color: white;
+  }
+  #dark-mode {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .contact-info {
+    text-align: absolute;
+   
+
+  }
+  
+a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+.header {
+    position: relative;
+    text-align: center;
+    padding: 35px 20px;
+    min-height: 150px;
+    
+}
+
+.header h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+.header h3 {
+    font-size: 22px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 200px; */
+}
+
+.profile-picture {
+  width: 130px;
+  height: auto;
+}
+
+#show {
+  margin-top: 10px;
+  cursor: pointer;
+}

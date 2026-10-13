@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHARATH S -Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+    <h1>BHARATH S</h1>
+    <h3>Full Stack Developer</h3>
+    <div class="profile">
+        <img src="Half_Size_Photo_Bharath s.jpg"
+             alt="Profile Picture"
+             class="profile-picture"
+             id="profile">
+    
+        <button id="show">Hide</button>
+    </div>
+
+<script>
+    const button = document.getElementById("show");
+const image = document.getElementById("profile");
+
+button.addEventListener("click", function () {
+    if (image.style.visibility === "hidden") {
+        image.style.visibility = "visible";
+        button.textContent = "Hide";
+    } else {
+        image.style.visibility = "hidden";
+        button.textContent = "Show";
+    }
+});
+</script>
+      <div class="contact-info"> 
+       <p>Phone:+91 6369761312 | Email:bharaths2202@gmail.com | Address:Chennai | <a href="https://www.linkedin.com/in/bharath-s-270782344" target="new">LinkedIn</a> | <a href="https://github.com/BHARATHs-dev" target="new">GitHub</a> | <a href="https://bharaths-dev.github.io/bharath-S-portfolio/" target="new">Portfolio</a>    
+    </p>
+</div>
+    <button id="dark-mode" onclick="myFunction()">
+        Dark Mode
+      </button>
+</div>
+    <hr>
+    <div class="summary">
+    <h3>Summary</h3>
+    <p>Final-year B.E. Computer Science and Engineering student with hands-on experience in full-stack web development using MongoDB, Express.js, React.js, and Node.js. Experienced in developing responsive web applications, REST APIs, database integration, and user-friendly interfaces. Strong foundation in JavaScript, Java, and software development fundamentals, with a keen interest in building scalable and efficient applications.</p>
+</div>
+    <hr>
+    <div class="Education">
+    <h3>Education</h3>
+    <table border="1">
+    <tr>
+        <th>S.No</th>
+            <th>NAME OF THE INSTITUTIONS</th>
+            <th>GRADE/PERCENTAGE</th>
+            <th>YEAR</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>B.E. Computer Science and Engineering</td>
+        <td>8.11/10</td>
+        <td>2023–2027</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Jayapriya Vidyalaya Matric Hr. Sec. School</td>
+        <td>79.33%</td>
+        <td>2023</td>
+    </tr>
+</div>
+</table>
+    <hr>
+    <div class="skills">
+    <h3>Skills</h3>
+    <ul>
+        <li>Programming Languages: Java, JavaScript</li>
+        <li>Frontend: HTML, CSS, React.js</li>
+        <li>Backend: Node.js, Express.js, REST APIs</li>
+        <li>Database: MongoDB</li>
+        <li>Tools:GitHub, VS Code,, MongoDB Compass</li>
+    </ul>
+</div>
+    <hr>
+    <div class="work-experience">
+    <h3>Work Experience</h3>
+    <ul>
+        <li>Frontend Development Internship at SkillDecode Tech| <strong>May 2025 – June 2025</strong></li>
+        <li>Full stack Development Internship at Amihive Software Solutions| <strong>May 2026 – June 2026</strong></li>
+</ul>
+</div>
+    <hr>
+    <div class="projects">
+    <h3>Projects</h3>
+    <ul>
+        <li><strong>Project 1: AI-Based Green Campus Biomass Monitoring System</strong></li>
+        <p>Developing a system to estimate tree biomass and carbon storage using field measurements, vegetation data, and geospatial technologies.Working with machine learning models, Python, MongoDB, React, and mapping technologies to support campus vegetation monitoring..</p>
+        <li><strong>Project 2: Billing System</strong></li>
+        <p>Developing a comprehensive billing system for managing invoices, payments, and financial records. Utilizing technologies like Node.js, Express.js, and MongoDB to create a robust and scalable solution.</p>
+    </ul>
+</div>
+<hr>
+<div class="certifications">
+    <h3>Certifications</h3>
+    <ol>
+        <li>AWS Cloud Quest – Cloud Practitioner</li>
+        <li>NPTEL – Programming in Java</li>
+        <li>Infosys Springboard – Frontend Web Development</li>
+    </ol>
+</div>
+<hr>
+<div class="languages">
+    <h3>Languages</h3>
+    <ul>
+        <li>English</li>
+        <li>Tamil</li>
+    </ul>
+</div>
+<script>
+function myFunction() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+    var button = document.getElementById("dark-mode");
+    button.textContent = element.classList.contains("dark-mode") ? "Light Mode" : "Dark Mode";
+
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!-- counter  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="script.js">
+    <title>Counter</title>
+</head>
+<body>
+    <button id="myButton">Count</button>
+    <label id="plus">+1</label>
+    <script>
+        var count =0;
+        const button = document.getElementById('myButton');
+        const label = document.getElementById('plus');
+        button.addEventListener('click' , function(){
+            count = count+1;
+            label.textContent = `counter : ${count}`;
+            label.style.color = 'red';
+
+        });
+    </script>
+</body>
+</html> -->
+
+<!-- toggle color change -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        .show{
+            color: green;
+
+        }
+        .hide{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    
+        <button id="show">Show</button>
+        <label id="showlabel"></label>
+        <script>
+            var boolean;
+            const button = document.getElementById('show');
+            const label = document.getElementById('showlabel'); 
+            button.addEventListener('click' , function(){
+                boolean = !boolean;
+                label.textContent = `${boolean?"Label is visible":"label is hidden"}`;
+                label.className =`${boolean?"show":"hide"}`;
+
+            })
+
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id ="show">Show</button>
+    <label id="showlabel"></label>
+    <script>
+        var data =['HTML','CSS','JavaScript','React'];
+        const button = document.getElementById('show');
+        const label = document.getElementById('showlabel');
+        button.addEventListener('click' , function(){
+            data.forEach(function(item , index){
+                const listItem = document.createElement('li');
+                listItem.textContent = item;
+                label.appendChild(listItem);
+            });
+        });
+    </script>
+</body>
+</html>
